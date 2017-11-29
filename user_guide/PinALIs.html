@@ -1,0 +1,106 @@
+﻿<html>
+	
+<head>
+	<title>Pin ALIs</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "TransAM User Guide.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("PinALIs");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Pin ALIs</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="capital_projects.html">Capital Planning</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="capital_projects.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="EditingaProjectandALI.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="planning.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">TransAM allows State users to mark projects (or more specifically ALIs) as "pre-approved" to ensure these projects are programmed in an agencies capital plan. The functionality involves "pinning" an ALI to an agencies capital plan, which prevents that ALI from being further altered in any way.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">State Staff and Managers can pin ALIs from all screens that display an ALI block:</span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts6">Project Planner</span></li>
+<li class="rvps2"><span class="rvts6">Fund Projects (three-year view)</span></li>
+<li class="rvps2"><span class="rvts6">Fund Projects (single year view)</span></li>
+<li class="rvps2"><span class="rvts6">Capital Project Detail Page -&gt; Activity Line Items tab </span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Select the orange "thumb-tack" icon to toggle the ALI between pinned (vertical thumb-tack orientation) and unpinned (horizontal thumb-tack orientation). After clicking the icon, TransAM will ask the user to confirm that they want to perform the action; once confirmed, the ALI will update.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">When an ALI is marked as pinned, TransAM effectively locks that ALI in place and prevents it from being altered. This includes the following:</span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts6">Users are not allowed to move assets from a pinned ALI to another fiscal year. Specifically, TransAM prevents users from dragging and dropping pinned ALIs to another fiscal year, and moving a sub-selection of assets from a pinned ALI to another fiscal year.</span></li>
+<li class="rvps2"><span class="rvts6">When applying the policy, the "Scheduled Year" for assets that are part of a pinned ALI remain unchanged.</span></li>
+<li class="rvps2"><span class="rvts6">When running the SOGR generator, pinned ALIs are not altered in any way. Assets attached to that ALI will remain in place; the cost of the ALI will not change; and no new assets will be added to that ALI.</span></li>
+<li class="rvps2"><span class="rvts6">Changes to other ALIs will not alter the "Pinned" ALI. For example, if there is a pinned ALI for FY 20-21 to replace Std 40 FT Buses, deferring two replacement Std 40 FT Buses in a FY 19-20 ALI to FY 20-21 will not add those assets to the pinned ALI. Instead, a new and separate ALI will be created in FY 20-21 for moved buses. Unpinning the ALI will not automatically merge the two ALIs; the SOGR build will need to be rerun.</span></li>
+<li class="rvps2"><span class="rvts6">Users are not allowed to dispose assets which are in "Pinned" ALIs. If attempted, the user will receive the pop-up warning, "This asset cannot be disposed of as it is part of a pinned ALI. Please contact your project manager for assistance." The State will need to unpin the ALI to accomplish this task.</span></li>
+<li class="rvps2"><span class="rvts6">The Action menu for a "Pinned" ALIs detail page is disabled</span></li>
+<li class="rvps2"><span class="rvts6">Pin functionality is only available for real ALIs and not shadow projects/ALIs.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Cambridge Systematics. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

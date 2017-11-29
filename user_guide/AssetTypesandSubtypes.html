@@ -1,0 +1,90 @@
+﻿<html>
+	
+<head>
+	<title>Asset Types and Subtypes</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "TransAM User Guide.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("AssetTypesandSubtypes");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Asset Types and Subtypes</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="assets.html">Assets and Inventory</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="assets.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="assets.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="manufacturers.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">Every asset in TransAM has a type (e.g., Revenue Vehicle, Support Facility, or Equipment) and a subtype (e.g., 40-Foot Bus, Administration Building, Electrical Equipment, respectively) in a hierarchy. The asset type-subtype relationship is the taxonomy that defines your inventory and dictates the attributes or data fields that exist for assets of that subtype. The exact asset types, subtypes, and data fields that you see will vary depending on how your deployment has been configured. </span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li style="margin-left: 0px" class="rvps5"><span class="rvts6">If you click on the Inventory menu, the asset types in your inventory will appear in the top section of the menu. Hover over any one of the asset types to see a menu listing all the subtypes for that asset type.</span></li>
+<li style="margin-left: 0px" class="rvps5"><span class="rvts6">Choose Inventory-&gt;Add Asset to show the New Asset screen, and then look at the Asset Type menu. It lists all asset types (in bold) and subtypes in a single location.</span></li>
+<li style="margin-left: 0px" class="rvps5"><span class="rvts6">Many reports and charts also organize data by asset type and/or subtype. Choose My Organization from the</span><a class="rvts14" href="UserMenu.html"> User Menu</a><span class="rvts6">, and then click the Asset Summary tab to see a pie chart of your assets by subtype.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">System Administrators can edit the available list of asset types and subtypes through the Admin Interface.</span></p>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Cambridge Systematics. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

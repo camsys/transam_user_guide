@@ -1,0 +1,185 @@
+﻿<html>
+	
+<head>
+	<title>Asset Attributes - Master Data and Updates</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "TransAM User Guide.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("AssetAttributesMasterDataandUpda");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Asset Attributes - Master Data and Updates</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="assets.html">Assets and Inventory</a> &rsaquo;&rsaquo; <a href="AssetActionsMenu.html">Asset Actions Menu</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="AssetActionsMenu.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="AssetActionsMenu.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="ParentandChildAssets.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">TransAM assets have two kinds of data attributes:</span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li style="margin-left: 0px" class="rvps5"><span class="rvts11">Master data</span><span class="rvts6"> describe the asset, but generally do not change over the life of the asset. For example, a vehicle's Vehicle Identification Number (VIN) will never change, nor will the manufacturer, or the date on which the vehicle was purchased. The Serial Number of a computer server is another example.</span></li>
+<li style="margin-left: 0px" class="rvps5"><span class="rvts11">Updates</span><span class="rvts6"> are data that describe the asset but change over time. &nbsp;A vehicle's mileage, condition, and even the garage in which it is housed change routinely and regularly. &nbsp;An HVAC unit may be taken out of service, but then put back in service later.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">When you Edit the master data (Master Record &amp; Depreciation Data), the old data is erased forever. However, if you perform an Update to the asset, the new data is captured, and a record of that event is preserved as part of the asset's history. You can view an asset's historical events and even export this information to excel to report on information such as change in condition, mileage and other regular updates.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts6">To Edit an asset, navigate to an asset detail page and select the Actions button to display a menu of options. Hover over the Edit menu to display an additional menu and select either Master Record or Depreciation Data.</span></li>
+<li class="rvps2"><span class="rvts6">To Update an asset, navigate to an asset detail page and select the Actions button to display a menu of options. Hover over the Update menu to display an additional menu listing available asset events. The following table lists the types of updates available and the asset types to which the option relates:</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<div class="rvps2"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+<tr valign="top">
+<td width="347" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts15">Update</span></p>
+</td>
+<td width="690" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts15">Asset Types</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="347" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Condition</span></p>
+</td>
+<td width="690" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Revenue Vehicles, Stations/Stops/Terminals, Support Facilities, Support Vehicles, Equipment (All Types), Signals/Signs, Rail Cars, Locomotives</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="347" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Rebuild/rehabilitation</span></p>
+</td>
+<td width="690" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Revenue Vehicles, Stations/Stops/Terminals, Support Facilities, Support Vehicles, Equipment (All Types), Signals/Signs, Rail Cars, Locomotives</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="347" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Service status</span></p>
+</td>
+<td width="690" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Revenue Vehicles, Stations/Stops/Terminals, Support Facilities, Support Vehicles, Equipment (All Types), Signals/Signs, Rail Cars, Locomotives</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="347" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Location</span></p>
+</td>
+<td width="690" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Revenue Vehicles, Stations/Stops/Terminals, Support Facilities, Support Vehicles, Equipment (All Types), Signals/Signs, Rail Cars, Locomotives</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="347" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Facility Operations Metrics</span></p>
+</td>
+<td width="690" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Stations/Stops/Terminals</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="347" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Operations metrics</span></p>
+</td>
+<td width="690" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Revenue Vehicles, Support Vehicles, Rail Cars, Locomotives</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="347" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Vehicle use metrics</span></p>
+</td>
+<td width="690" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Revenue Vehicles, Support Vehicles, Rail Cars, Locomotives</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="347" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Storage method</span></p>
+</td>
+<td width="690" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Revenue Vehicles, Support Vehicles, Rail Cars, Locomotives</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="347" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Mileage</span></p>
+</td>
+<td width="690" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Revenue Vehicles, Support Vehicles</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="347" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Usage codes</span></p>
+</td>
+<td width="690" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Revenue Vehicles</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="347" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Maintenance history</span></p>
+</td>
+<td width="690" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Revenue Vehicles, Stations/Stops/Terminals, Support Facilities, Support Vehicles, Equipment (All Types), Signals/Signs, Rail Cars, Locomotives</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="347" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Maintenance provider type</span></p>
+</td>
+<td width="690" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Revenue Vehicles, &nbsp;Stations/Stops/Terminals, Support Facilities, Support Vehicles, Equipment (All Types), Signals/Signs, Rail Cars, Locomotives</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="347" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Replacement status</span></p>
+</td>
+<td width="690" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Revenue Vehicles, Stations/Stops/Terminals, Support Facilities, Support Vehicles, Equipment (All Types), Signals/Signs, Rail Cars, Locomotives</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Cambridge Systematics. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

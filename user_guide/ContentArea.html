@@ -1,0 +1,97 @@
+﻿<html>
+	
+<head>
+	<title>Content Area</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "TransAM User Guide.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("ContentArea");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Content Area</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="Overview.html">Overview</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="Overview.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="UserSettings.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="assets.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">The </span><span class="rvts11">Content Area</span><span class="rvts6"> takes up most of the screen, displaying the data and information you manage within TransAM. The layout of the area changes depending on the type of information you are viewing. &nbsp;But there are some elements that appear with regularity:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts11">Bread Crumbs</span><span class="rvts6">: TransAM uses "bread crumbs" to assist you in navigating the software. For example, if you were viewing detailed data on an asset, you might see bread crumbs that look like this.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps5"><span class="rvts6">Home / Facility Equipment / Mechanical Equipment / 50011</span></p>
+<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts6">50011 represents the asset tag of the asset you are viewing, and indicates that you are looking at this asset in the Detail view</span><span class="rvts6">. By clicking on different parts of the bread crumbs, you can navigate to a table of all Mechanical Equipment assets, of all Facility Equipment assets, or jump back to the Dashboard (Home page).</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts11">Previous/Next Controls: </span><span class="rvts6">When you are looking at a single asset, organization, user, etc., you can typically navigate to the next or previous item using the Previous &lt; or Next &gt; buttons that appear to the far right of the Bread Crumbs.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts11">Tables</span><span class="rvts6">: TransAM presents a lot of information in the form of tables. One row per asset (or user, or organization, etc.), with one column for each data field of interest. You can page your way through these tables to see the data (using the page controls), and in many cases you can sort the data by clicking on any column heading. &nbsp;Most tables have special controls that let you change the pagination, customize the fields that are displayed, and export the data in a variety of formats.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts11">Tabs</span><span class="rvts6">: Often, detailed information on a single asset, organization, or project, etc. is organized into Tabs that let you easily navigate among different categories of information. For example, pages showing asset details include multiple tabs with groupings of core asset data, another tab that shows the history of that asset in graphical form, and other tabs that add comments, attach documents, and attach photos respectively.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts11">Actions Menu</span><span class="rvts6">: TransAM provides easy access to important features and functions through an Actions Menu. The actions you can take vary, but might include updating the condition or location of an asset, scheduling a replacement year, or exporting data in the table to a spreadsheet file. Users with read-only access will not see the Actions Menu.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Cambridge Systematics. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

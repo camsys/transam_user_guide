@@ -1,0 +1,156 @@
+﻿<html>
+	
+<head>
+	<title>Audit Management</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "TransAM User Guide.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("AuditManagement");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Audit Management</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="AdminFunctionality.html">Admin Functionality</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="AdminFunctionality.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="AdminFunctionality.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="dotgrants_migrations.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">The State can perform audits within TransAM to assist agencies in regularly performing essential updates to their inventories. For example, all assets need to have Service Status, Condition, and Mileage (where appropriate) updated every year, so TransAM will annually set up an audit known as the Annual Inventory Update. When TransAM runs the audit, it checks that each asset has had its Service Status, Condition, and Mileage (where appropriate) updated within a given date range.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">If you are an administrator, from the Main Menu click on the Settings Icon and select Audits from the subsequent dropdown. You will be directed to a page summarizing all available Audits (currently you will only see the Annual Inventory Update). Clicking on the audit from the table will bring you to the detail page of that audit. The audit consists of the following editable fields:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<div class="rvps9"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+<tr valign="top">
+<td width="193" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts15">Attribute</span></p>
+</td>
+<td width="194" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts15">Example</span></p>
+</td>
+<td width="232" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts15">Description</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="193" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Name</span></p>
+</td>
+<td width="194" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Annual Inventory Update</span></p>
+</td>
+<td width="232" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">The name assigned to the audit.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="193" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Description</span></p>
+</td>
+<td width="194" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Checks to see that each asset has had the Service Status, Condition, and Mileage (where appropriate) updated each quarter.</span></p>
+</td>
+<td width="232" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">A description of the configured audit.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="193" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Instructions</span></p>
+</td>
+<td width="194" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Update the Service Status, Condition, and Mileage (where appropriate) values for each of the operational assets in your inventory each quarter.</span></p>
+</td>
+<td width="232" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Instructions for how the users should comply with the audit.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="193" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Data Update Start Date,</span></p>
+<p class="rvps2"><span class="rvts6">Data Update End Date</span></p>
+</td>
+<td width="194" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Data Update Start Date: 01/01/2017</span></p>
+<p class="rvps2"><span class="rvts6">Data Update End Date: 02/17/2017</span></p>
+</td>
+<td width="232" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Each asset is assigned an audit pass or fail status based on whether the asset satisfies the following two conditions:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li style="margin-left: 0px" class="rvps5"><span class="rvts6">If the date the user performs the update is within the Audit Activity Start and Audit Activity End dates.</span></li>
+<li style="margin-left: 0px" class="rvps5"><span class="rvts6">If the date of report on the update form is within the Update Start and Update End date range.</span></li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<td width="193" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Active</span></p>
+</td>
+<td width="194" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Yes or No</span></p>
+</td>
+<td width="232" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">An indicator if the audit is turned on or off.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="193" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Audit Activity</span></p>
+</td>
+<td width="194" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Audit Activity Start Date: 01/01/2016</span></p>
+<p class="rvps2"><span class="rvts6">Audit Activity End Date: 07/31/2016</span></p>
+<p class="rvps2"><span class="rvts6">Frequency Type: Week</span></p>
+<p class="rvps2"><span class="rvts6">Show in Dashboard: Yes</span></p>
+<p class="rvps2"><span class="rvts6">Active: Yes</span></p>
+</td>
+<td width="232" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">The Audit Activity sets the regular interval that the audit is performed. The purpose of the audit activity is to pick up changes in the asset inventory (e.g. new assets) or changes in the audit. This activity is automatically performed if the Data Update Start/End Dates are changed. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Cambridge Systematics. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

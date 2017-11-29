@@ -1,0 +1,112 @@
+﻿<html>
+	
+<head>
+	<title>Audit Results</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "TransAM User Guide.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("AuditResults");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Audit Results</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="assets.html">Assets and Inventory</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="assets.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="saved_searches.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="policies.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">TransAM uses its audit system to organize and notify agencies of audit requests. For example, all assets need to have Service Status, Condition, and Mileage (where appropriate) properties updated annually which is an audit known as the Annual Inventory Update. When TransAM runs the audit, it checks that each asset has had its Service Status, Condition, and Mileage (where appropriate) updated within a given date range.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">There are two methods for viewing audit results:</span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts6">From the Main Menu choose the desired audit from the Policies dropdown. TransAM will navigate to a table that displays the results for the selected audit. The table includes filters to view specific sub-selections of assets as well as information describing the asset, whether it passed or failed the audit, the date it was last updated, and notes with remaining tasks.</span></li>
+<li class="rvps2"><span class="rvts6">The Dashboard displays a summary of the audit results for an individual's agency/agencies. The display shows the percentage of assets passing the audit broken down by asset type. Click on an asset type to navigate to a list of the remaining assets failing the audit filtered for that selected asset type.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">You can satisfy audit requirements on an asset-by-asset basis or by updating asset information through a spreadsheet. Satisfy an audit request on a single asset using the following work flow:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ol style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: decimal;">
+<li value="1" class="rvps2"><span class="rvts6">From the Main Menu, select Policies -&gt; Annual Inventory Update Results.</span></li>
+<li value="2" class="rvps2"><span class="rvts6">Navigate to an asset that failed the audit by clicking on the Asset Tag link.</span></li>
+<li value="3" class="rvps2"><span class="rvts6">From the detail view, select the Audit Results tab to see the required work in the Notes column.</span></li>
+<li value="4" class="rvps2"><span class="rvts6">Perform the necessary updates using the Actions Menu and the corresponding update forms.</span></li>
+<li value="5" class="rvps2"><span class="rvts6">In the Audit Results tab, observe the Notes will update as you complete the audit work. Once no tasks remain, the audit status will change from failed to passed.</span></li>
+</ol>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Note: You may have to wait 10-15 seconds and refresh the page to see the updates.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Alternatively, you can satisfy audit requirements in bulk through a spreadsheet:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ol style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: decimal;">
+<li value="1" class="rvps2"><span class="rvts6">From the Main Menu, select Policy -&gt; Annual Inventory Update Results.</span></li>
+<li value="2" class="rvps2"><span class="rvts6">Select the assets you would like to update using the checkboxes on the leftmost column. Note: Hide the pagination to view all assets to use the 'select all' checkbox.</span></li>
+<li value="3" class="rvps2"><span class="rvts6">Click the Inventory Updates button. </span></li>
+<li value="4" class="rvps2"><span class="rvts6">Perform the </span><a class="rvts14" href="BulkInventoryUpdates.html">Bulk Inventory Updates</a><span class="rvts6"> workflow on the sub-selection of assets in the template.</span></li>
+<li value="5" class="rvps2"><span class="rvts6">In either the User Dashboard or Audit Results interface, confirm that the updates are reflected in the audit results and notes.</span></li>
+</ol>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Cambridge Systematics. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

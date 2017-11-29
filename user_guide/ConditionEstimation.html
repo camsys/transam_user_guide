@@ -1,0 +1,135 @@
+﻿<html>
+	
+<head>
+	<title>Condition Estimation</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "TransAM User Guide.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("ConditionEstimation");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Condition Estimation</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="policies.html">Policy</a> &rsaquo;&rsaquo; <a href="Calculators.html">Calculators</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="Calculators.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="ReplacementCostCalculation.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="ServiceLifeCalculationMethod.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">TransAM uses a one to five rating scale to provide an assessment of the current physical conditions of existing transit assets. TransAM can use the condition ratings as an indicator of when assets require replacement. The scale is defined as follows:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<div class="rvps9"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+<tr valign="top">
+<td width="93" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts15">Condition</span></p>
+</td>
+<td width="120" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts15">Ratings</span></p>
+</td>
+<td width="547" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts15">Description</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="93" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Excellent</span></p>
+</td>
+<td width="120" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">5.0 </span></p>
+</td>
+<td width="547" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">New asset; no visible defects.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="93" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Good</span></p>
+</td>
+<td width="120" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">4.0</span></p>
+</td>
+<td width="547" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Asset showing minimal signs of wear; some (slightly) defective or deteriorated component(s).</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="93" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Adequate</span></p>
+</td>
+<td width="120" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">3.0</span></p>
+</td>
+<td width="547" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Asset has reached its mid-life; some moderately defective or deteriorated component(s).</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="93" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Marginal</span></p>
+</td>
+<td width="120" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">2.0</span></p>
+</td>
+<td width="547" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Asset reaching or just past the end of its useful life; increasing number of defective or deteriorated component(s) and increasing maintenance needs.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="93" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Poor</span></p>
+</td>
+<td width="120" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">1.0</span></p>
+</td>
+<td width="547" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Asset is past its useful life and needs immediate repair or replacement; may have critically damaged components(s).</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Cambridge Systematics. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

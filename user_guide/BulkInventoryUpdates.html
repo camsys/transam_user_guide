@@ -1,0 +1,116 @@
+﻿<html>
+	
+<head>
+	<title>Bulk Inventory Updates</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "TransAM User Guide.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("BulkInventoryUpdates");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Bulk Inventory Updates</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="assets.html">Assets and Inventory</a> &rsaquo;&rsaquo; <a href="uploads.html">Bulk Actions</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="uploads.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="BulkNewInventory.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="BulkProcessResults.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">TransAM lets you update key information for many assets at once by importing updates from a spreadsheet. This approach can update hundreds of assets in a single operation and can be more efficient than updating assets by hand. To use this approach, you download a spreadsheet template, update the spreadsheet using Excel or a compatible product, and then upload the revised data.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts11">Downloading a Template</span></p>
+<ol style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: decimal;">
+<li value="1" style="margin-left: 0px" class="rvps5"><span class="rvts6">Click the Inventory icon on the Main Menu and select Bulk Updates -&gt; Download Templates. You will be directed to the Download Template page.</span></li>
+<li value="2" style="margin-left: 0px" class="rvps5"><span class="rvts6">Click the drop down next to the Template Type label and select the Inventory Updates option.</span></li>
+<li value="3" style="margin-left: 0px" class="rvps5"><span class="rvts6">If you have access to multiple organizations, click the drop down next to the Organization label and select an organization for the template.</span></li>
+<li value="4" style="margin-left: 0px" class="rvps5"><span class="rvts6">Click the drop down next to the Asset Type label and select the type of asset you would like to add (Revenue Vehicles, Support Facilities, Rail Cars, Equipment, etc.).</span></li>
+<li value="5" style="margin-left: 0px" class="rvps5"><span class="rvts6">Click Create Template to create and download the spreadsheet (the exact process may vary from web browser to web browser).</span></li>
+</ol>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Note: An alternative method for downloading a bulk update template is via the </span><a class="rvts14" href="audit_results.html">Audit</a><span class="rvts6"> workflow.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts11">Editing the Spreadsheet</span></p>
+<p class="rvps2"><span class="rvts6">The spreadsheet contains one row for each asset in your inventory of the selected type, and the last recorded value for Mileage (revenue vehicles only), Condition, and Service Status. Update any asset for which updated information is available, indicating the new value and the effective date for that information. &nbsp;Save the updated spreadsheet when you are done. </span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts11">Uploading the Edited Spreadsheet</span></p>
+<ol style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: decimal;">
+<li value="1" style="margin-left: 0px" class="rvps5"><span class="rvts6">Click the Inventory icon on the Main Menu and select Bulk Updates -&gt; Upload Template. You will be directed to the New Template page.</span></li>
+<li value="2" style="margin-left: 0px" class="rvps5"><span class="rvts6">Select Inventory Updates from the Spreadsheet Content menu.</span></li>
+<li value="3" style="margin-left: 0px" class="rvps5"><span class="rvts6">If you have access to multiple organizations, click the dropdown next to the Organization label and select the Organization for which the update is being performed.</span></li>
+<li value="4" style="margin-left: 0px" class="rvps5"><span class="rvts6">Click the "Choose File" button next to the Spreadsheet label. Select the spreadsheet that you previously downloaded from TransAM, edited, and saved.</span></li>
+<li value="5" style="margin-left: 0px" class="rvps5"><span class="rvts6">Click the Upload spreadsheet button. The file will be uploaded and you will be directed to the Bulk Updates table.</span></li>
+</ol>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">At this point, TransAM will process the file in the background and perform any updates to the inventory. Depending on how many rows were loaded, this process might take a few minutes. Accordingly, TransAM tells you when background jobs are complete via the </span><a class="rvts14" href="NotificationsMenu.html">Notifications</a><span class="rvts6"> menu.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">You can check on the progress of your upload by looking at the processing logs. To view the logs, choose Inventory-&gt;Bulk Updates to see a list of all spreadsheets imported by users in your agency. Choose the file you just uploaded:</span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts6">The left panel summarizes the file that was uploaded: the content, the upload user, date and time of the upload, and upload status.</span></li>
+<li class="rvps2"><span class="rvts6">The Processing tab summarizes how many rows of information were found in the file, how many rows were processed, how many rows were replaced, and how many rows failed due to data problems.</span></li>
+<li class="rvps2"><span class="rvts6">The Process Log reports every change that was made to the asset data, and itemizes every problem encountered along the way.</span></li>
+<li class="rvps2"><span class="rvts6">The Updates tab summarizes each new asset and event that was successfully processed by the system. You can click on the asset or event link to navigate to their correlating detail pages.</span></li>
+</ul>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Cambridge Systematics. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

@@ -1,0 +1,197 @@
+﻿<html>
+	
+<head>
+	<title>Subtype rule</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "TransAM User Guide.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Subtyperule");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Subtype rule</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="policies.html">Policy</a> &rsaquo;&rsaquo; <a href="PolicyOverview.html">Policy Overview</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="PolicyOverview.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="AssetTypeRules.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="PolicyActions.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">Each Asset Type has many Subtypes. In a policy, the available Asset Subtype rules are the same as the Subtypes in your inventory. If you have a 40 FT Bus you will have a policy rule for 40 FT Buses. For rolling stock assets, each policy rule has a unique combination of asset subtype and fuel type; for non-rolling stock assets, each rule has a unique asset subtype. These rules state the useful life and replacement instructions for that distinctive subtype/fuel type combination.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The useful life information at the Asset Subtype level describes the asset and its expected lifespan. Useful life information includes:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<div class="rvps9"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+<tr valign="top">
+<td width="145" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Estimated Service Life in Months - ESL (Mo)</span></p>
+</td>
+<td width="478" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">The number of months that assets of this subtype are expected to be used in service in a state of good repair. This might be 12 years (144 months) for a 40-foot heavy duty bus, 5 years (60 months) for a piece of IT equipment, or 30 years (360 months) for a maintenance facility.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="145" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Fuel type</span></p>
+</td>
+<td width="478" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">The fuel type associated with the type vehicle</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="145" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Estimated Service Life in Miles - ESL (Mi)</span></p>
+</td>
+<td width="478" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">The number of miles that assets of this subtype are expected to be in service and in a state of good repair. This might be 500,000 miles for a 40-foot heavy duty bus. This item applies only to asset subtypes that track mileage.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="145" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Estimated Service Life Used in Months – ESL Used (Mo)</span></p>
+</td>
+<td width="478" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">The number of months that assets of this subtype are expected to be in service and in a state of good repair for a used vehicle.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="145" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Lease length months</span></p>
+</td>
+<td width="478" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">The number of months for which the asset of this subtype is scheduled to be leased.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The replacement information in the Policy dictates how TransAM will replace an asset when it reaches the end of its life. By default, TransAM assumes that at the end of its life, every asset will be replaced by an asset of the same subtype/fuel type combination. The Policy can be used to change this, so that 40-foot buses are replaced by 35-foot buses, or diesel buses by diesel-electric hybrids. Additionally, the Policy can designate if you will replace an asset with a new or leased item. The Replacement information in a Policy Rule includes:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<div class="rvps9"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+<tr valign="top">
+<td width="178" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Replacement cost</span></p>
+</td>
+<td width="588" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">An estimate of the cost of replacing an asset of this subtype. This is usually based on estimates, existing contracts in place with vendors, or historical data. This item is ignored if the policy uses Purchase Cost + Interest as the Replacement Cost Calculator.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="178" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Cost FY year</span></p>
+</td>
+<td width="588" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">The recorded Fiscal Year of the Replacement cost. This allows the policy to adjust the replacement cost over time due to inflation.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="178" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Replace New</span></p>
+</td>
+<td width="588" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">An indicator that the policy is set to replace the asset with a new asset.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="178" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Replace Leased</span></p>
+</td>
+<td width="588" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">An indicator that the policy is set to replace the asset with a leased asset.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="178" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Replace asset subtype</span></p>
+</td>
+<td width="588" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">If assets of this subtype should be replaced by a different type of asset, this item designates the type of asset to use as the replacement.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="178" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Replace fuel type</span></p>
+</td>
+<td width="588" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">If vehicles of this subtype should be replaced with vehicles that use a different fuel type, this item designates the fuel type to use as the replacement. This item applies only to vehicles.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="178" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Purchase replacement code</span></p>
+</td>
+<td width="588" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">The six digit TrAMS ALI purchase replacement code as designated by the FTA (</span><a class="rvts14" href="https://www.transit.dot.gov/funding/grantee-resources/teamtrams/scope-activity-line-item-tree" target="_blank">see link</a><span class="rvts6">). This code is used to define the creation of SOGR ALIs. Administrators manage the asset subtype to purchase replacement code mappings.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="178" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Lease replacement code</span></p>
+</td>
+<td width="588" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">The six digit TrAMS ALI lease replacement code as designated by the FTA (</span><a class="rvts14" href="https://www.transit.dot.gov/funding/grantee-resources/teamtrams/scope-activity-line-item-tree" target="_blank">see link</a><span class="rvts6">). This code is used to define the creation of SOGR ALIs. Administrators manage the asset subtype to lease replacement code mappings.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="178" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Purchase expansion code</span></p>
+</td>
+<td width="588" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">The six digit TrAMS ALI purchase expansion code as designated by the FTA (</span><a class="rvts14" href="https://www.transit.dot.gov/funding/grantee-resources/teamtrams/scope-activity-line-item-tree" target="_blank">see link</a><span class="rvts6">). This code is used to define the creation of ALIs. Administrators manage the asset subtype to purchase expansion code mappings.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="178" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Lease expansion code</span></p>
+</td>
+<td width="588" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">The six digit TrAMS ALI lease expansion code as designated by the FTA (</span><a class="rvts14" href="https://www.transit.dot.gov/funding/grantee-resources/teamtrams/scope-activity-line-item-tree" target="_blank">see link</a><span class="rvts6">). This code is used to define the creation of ALIs. Administrators manage the asset subtype to lease expansion code mappings.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="178" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Engineering design code</span></p>
+</td>
+<td width="588" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">The six digit TrAMS ALI engineering design code as designated by the FTA (</span><a class="rvts14" href="https://www.transit.dot.gov/funding/grantee-resources/teamtrams/scope-activity-line-item-tree" target="_blank">see link</a><span class="rvts6">). This code is used to define the creation of ALIs. Administrators manage the asset subtype to engineering design code mappings.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="178" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Rehabilitation code</span></p>
+</td>
+<td width="588" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">The six digit TrAMS ALI rehabilitation code as designated by the FTA (</span><a class="rvts14" href="https://www.transit.dot.gov/funding/grantee-resources/teamtrams/scope-activity-line-item-tree" target="_blank">see link</a><span class="rvts6">). This code is used to define the creation of ALIs. Administrators manage the asset subtype to rehabilitation code mappings.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Cambridge Systematics. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

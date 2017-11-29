@@ -1,0 +1,165 @@
+﻿<html>
+	
+<head>
+	<title>ALI Filter Menu</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "TransAM User Guide.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("ALIFilterMenu");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">ALI Filter Menu</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="Overview.html">Overview</a> &rsaquo;&rsaquo; <a href="MainMenu.html">Main Menu</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="MainMenu.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="searches.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="user_organization_filters.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">When working with functionality relating to capital projects it is often useful to look at a subset of projects (or more accurately a subset of Activity Line Items). TransAM has a special filter that enables the user to filter views to only show certain sets of ALIs. Some filters are created by default while others can be added by users. The filter is identified by the name of the currently selected filter (often "All ALIs") and is located on the right side of the Main Menu next to the search menu. Change your ALI filter by clicking the filter drop-down. The menu will appear with two panels:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li style="margin-left: 0px" class="rvps5"><span class="rvts6">On the left is a list of available ALIs. Click the desired filter to update the view to reflect the selection.</span></li>
+<li style="margin-left: 0px" class="rvps5"><span class="rvts6">On the right is the option to manage existing filters or create a new filter.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The list of default filters is as follows:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<div class="rvps9"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+<tr valign="top">
+<td width="194" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts15">Name</span></p>
+</td>
+<td width="572" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts15">Description</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="194" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">All ALIs</span></p>
+</td>
+<td width="572" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">All ALIs across all the agencies set in your organization filter</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="194" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Vehicles</span></p>
+</td>
+<td width="572" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Revenue and Support Vehicles</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="194" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Equipment</span></p>
+</td>
+<td width="572" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Maintenance, IT, Facility, Office or Communications Equipment, and Signals/Signs</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="194" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Facilities</span></p>
+</td>
+<td width="572" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Stations/Stops/Terminals and Support Facilities</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="194" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Rail and Locomotive</span></p>
+</td>
+<td width="572" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Rail Cars and Locomotives</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="194" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Backlog Assets</span></p>
+</td>
+<td width="572" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">ALIs with assets in Backlog</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="194" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Planning Year ALIs</span></p>
+</td>
+<td width="572" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">ALIs with assets to be replaced in the current planning year</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="194" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Shared Ride Assets</span></p>
+</td>
+<td width="572" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">ALIs with assets with FTA Mode Type Demand Response</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="194" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Agency Funded</span></p>
+</td>
+<td width="572" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">ALIs funded with local funds</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">When creating new ALI filters, you must enter a filter name and description. You can then select from a variety of filter parameters. Parameters include: Type, SOGR, Scope, Project Location, Asset Type, Asset Subtype, Owner, Funding, Backlog Status, and Not Fully Funded Status.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Note that the ALI filter only updates the views on relevant screens. Relevant screens include:</span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li style="margin-left: 0px" class="rvps5"><span class="rvts6">Capital Projects (Policies menu -&gt; Capital Projects)</span></li>
+<li style="margin-left: 0px" class="rvps5"><span class="rvts6">Project Planner (Policies menu -&gt; Project Planner)</span></li>
+<li style="margin-left: 0px" class="rvps5"><span class="rvts6">Fund Projects (Funding menu -&gt; Fund Projects)</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Cambridge Systematics. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

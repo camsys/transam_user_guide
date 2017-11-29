@@ -1,0 +1,108 @@
+﻿<html>
+	
+<head>
+	<title>Parent and Child Assets</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "TransAM User Guide.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("ParentandChildAssets");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Parent and Child Assets</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="assets.html">Assets and Inventory</a> &rsaquo;&rsaquo; <a href="AssetActionsMenu.html">Asset Actions Menu</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="AssetActionsMenu.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="AssetAttributesMasterDataandUpda.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="RecordDisposition.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">TransAM supports Parent and Child assets, which allows you to link assets together. Here are some examples:</span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li style="margin-left: 0px" class="rvps5"><span class="rvts6">You can associate significant mechanical assets, like an HVAC unit or bus lift, with a particular facility.</span></li>
+<li style="margin-left: 0px" class="rvps5"><span class="rvts6">You can associate a mobile asset, like a vehicle, with another asset in which it is typically stored, such as AVL hardware on a bus, or a bus in a garage.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Typically, you should designate something as a child asset only when the item in question is a capital asset in and of itself, which can be purchased separately, moved or relocated, or separated from the Parent and sold. An engine, for example, should not normally be treated as the child of a Bus, because it is an integral part of the asset. An HVAC compressor, however, might be treated as a child asset. An asset's parent is often referred to as its Location, because it defines where the asset can be found. Note that the location or parent asset can change from time to time if the asset is moved.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">To assign an asset to a Location or Parent asset:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ol style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: decimal;">
+<li value="1" style="margin-left: 0px" class="rvps5"><span class="rvts6">From the asset detail, choose Actions-&gt;Update-&gt;Location. TransAM displays the Update the Location page.</span></li>
+<li value="2" style="margin-left: 0px" class="rvps5"><span class="rvts6">Find the parent asset by entering part of its name, Asset Tag, or description. Choose the asset you want from the type-ahead list.</span></li>
+<li value="3" style="margin-left: 0px" class="rvps5"><span class="rvts6">Complete the rest of the form and click "Update the storage location" to assign the asset to a new parent asset location.</span></li>
+</ol>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">To view the location/parent of an asset:</span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li style="margin-left: 0px" class="rvps5"><span class="rvts6">When a group of assets are listed in a table, the location/parent asset (if any) is show as a column called Parent in the table.</span></li>
+<li style="margin-left: 0px" class="rvps5"><span class="rvts6">In the detail view, an asset's location/parent asset is shown in the asset summary as Location.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">To find all an asset's children, or all the assets that are housed at a facility:</span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li style="margin-left: 0px" class="rvps5"><span class="rvts6">In the detail view, choose the Occupants tab to see a list of child assets.</span></li>
+</ul>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Cambridge Systematics. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

@@ -1,0 +1,131 @@
+﻿<html>
+	
+<head>
+	<title>Record Disposition</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "TransAM User Guide.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("RecordDisposition");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Record Disposition</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="assets.html">Assets and Inventory</a> &rsaquo;&rsaquo; <a href="AssetActionsMenu.html">Asset Actions Menu</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="AssetActionsMenu.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="ParentandChildAssets.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="ReplacementStatus.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">During an asset's service life, it is possible that the asset might be sold, re-provisioned, traded in, or transferred. As a result, TransAM has a special event to record relevant information and set-off subsequent actions, which complete the disposition effort. An agency might dispose of an asset at different times for a variety of reasons. TransAM enables dispositions under two workflows; a final disposition, or an early disposition.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts11">Record a Final Disposition: </span><span class="rvts6">An example might be that a revenue vehicle has been in service for 12 years and over 500,000 miles, surpassing its service life criteria. In this occurrence, perform the following workflow from the asset detail page:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ol style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: decimal;">
+<li value="1" style="margin-left: 0px" class="rvps5"><span class="rvts6">Navigate to a vehicle whose age and mileage surpass its ESL (Age) and ESL (Mi.) as defined in the policy. These are usually older assets that have been in service for a long time and have accumulated large mileages.</span></li>
+<li value="2" style="margin-left: 0px" class="rvps5"><span class="rvts6">From the detail page, click Actions-&gt;Record final disposition. You will be directed to the final disposition form.</span></li>
+<li value="3" style="margin-left: 0px" class="rvps5"><span class="rvts6">Fill in the required fields and save the form. You will be taken back to the asset detail page. </span></li>
+<li value="4" style="margin-left: 0px" class="rvps5"><span class="rvts6">Observe that the final disposition is recorded as an event in the History tab.</span></li>
+<li value="5" style="margin-left: 0px" class="rvps5"><span class="rvts6">Click the Actions menu and observe no other updates can be made to the asset.</span></li>
+</ol>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts11">Record a Final Disposition - Asset Transfers: </span><span class="rvts6">If the ownership of an asset is transferred to another TransAM agency during disposition it is marked as "Disposition Type - Transferred." Follow the steps below to perform an asset transfer:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ol style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: decimal;">
+<li value="1" style="margin-left: 0px" class="rvps5"><span class="rvts6">Navigate to a vehicle whose age and mileage surpass its ESL (Age) and ESL (Mi.) as defined in the policy. These are usually older assets that have been in service for a long time and have accumulated large mileages.</span></li>
+<li value="2" style="margin-left: 0px" class="rvps5"><span class="rvts6">From the detail page, click Actions-&gt;Record final disposition. You will be directed to the final disposition form.</span></li>
+<li value="3" style="margin-left: 0px" class="rvps5"><span class="rvts6">Fill in the required fields selecting “Disposition Type – Transferred;” select a Transfer Organization; and save the form. You will be taken back to the asset detail page. At this point, the transfer request has been made but the asset has not officially been disposed. </span></li>
+<li value="4" style="margin-left: 0px" class="rvps11"><span class="rvts16">The receiving agency will see a new notification which says, “A new asset has been transferred to you. Please update the asset.” Click the link.</span></li>
+<li value="5" style="margin-left: 0px" class="rvps11"><span class="rvts16">The receiving agency is directed to an “Update master record” form where they confirm asset data and enter any required new data (e.g. Asset Tag, VIN, etc.). Click the Update button to save the form. Upon saving the transfer form, all asset data is copied to the receiving agency.</span></li>
+<li value="6" style="margin-left: 0px" class="rvps11"><span class="rvts16">Once the form is saved, the asset is officially disposed from the transfer agency and will appear in the receiving agency inventory. Note that the asset is not added to the receiving agency inventory until its master record form has been updated.</span></li>
+</ol>
+<p class="rvps11"><span class="rvts16"><br/></span></p>
+<p class="rvps2"><span class="rvts11">Request Early Disposition: </span><span class="rvts6">Different from the previous scenario is the instance where a vehicle fails to fulfill its expected life span. The real world is messy and sometimes mishaps such as accidents occur. Under these circumstances, the asset might require disposition before originally intended. In this occurrence, from the detail page you can perform the following workflow:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ol style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: decimal;">
+<li value="1" style="margin-left: 0px" class="rvps5"><span class="rvts6">Navigate to an asset whose age and mileage do not surpass the ESL (Age) and ESL (Mi.) as defined in the policy. These are generally newer assets.</span></li>
+<li value="2" style="margin-left: 0px" class="rvps5"><span class="rvts6">From the detail page, click Actions-&gt;Request early disposition. You will be directed to the early disposition form.</span></li>
+<li value="3" style="margin-left: 0px" class="rvps5"><span class="rvts6">Enter an explanation and attach any documentation related to the disposition request.</span></li>
+<li value="4" style="margin-left: 0px" class="rvps5"><span class="rvts6">The State is tasked with reviewing the request and deciding whether to Approve, Reject, or Approve via Transfer.</span></li>
+<li value="5" style="margin-left: 0px" class="rvps5"><span class="rvts6">TransAM notifies the requesting agency of the State's response.</span></li>
+<li value="6" style="margin-left: 0px" class="rvps5"><span class="rvts6">Navigate to the detail page and proceed according to the State Approval Process.</span></li>
+</ol>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts11">State Approval Process: </span><span class="rvts6">As noted, the State is tasked with reviewing early disposition requests. The State can respond with one of three options:</span></p>
+<ol style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: decimal;">
+<li value="1" style="margin-left: 0px" class="rvps5"><span class="rvts19">Approve</span><span class="rvts6">: The State reviews the agency requests and declares that the justification is satisfactory. In this case, the agency now has accessibility to the final disposition event for that given asset.</span></li>
+<li value="2" style="margin-left: 0px" class="rvps5"><span class="rvts19">Reject:</span><span class="rvts6"> The State reviews the agency requests and declares that the justification is not satisfactory. In this case, the agency still lacks accessibility to the final disposition event. If the agency chooses to pursue the disposition, they would have to make a second early disposition request.</span></li>
+<li value="3" style="margin-left: 0px" class="rvps5"><span class="rvts19">Approve via Transfer</span><span class="rvts6">: The State likely mediated the asset disposition with the intent of transferring it from one agency to another. Under these circumstances, the State can record the final disposition information and specifically enter the transfer criteria. </span></li>
+</ol>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Disposition requests can involve communication among State or PennDOT; TransAM simplifies this process by providing notifications and tracking required actions as requests are made.</span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li style="margin-left: 0px" class="rvps5"><span class="rvts6">The </span><a class="rvts14" href="NotificationsMenu.html">notifications menu</a><span class="rvts6"> tracks when new disposition notifications become available.</span></li>
+<li style="margin-left: 0px" class="rvps5"><span class="rvts6">The Inventory Menu will display an "Action Events" menu and sub-menus manage early disposition and transfer requests.</span></li>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside; list-style-type: circle;">
+<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Early Disposition Proposed: &nbsp;Maintains a list of pending early disposition requests.</span></li>
+<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Newly Transferred Assets: The receiving agency for an asset transfer is notified when there has been a transfer. Master Record information is required before the asset can officially be added to your inventory. </span></li>
+</ul></ul>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Cambridge Systematics. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

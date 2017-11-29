@@ -1,0 +1,95 @@
+﻿<html>
+	
+<head>
+	<title>Replacement Status</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "TransAM User Guide.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("ReplacementStatus");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Replacement Status</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="assets.html">Assets and Inventory</a> &rsaquo;&rsaquo; <a href="AssetActionsMenu.html">Asset Actions Menu</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="AssetActionsMenu.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="RecordDisposition.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="asset_groups.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">There are some assets that should not be considered when generating SOGR projects:</span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts6">Assets whose replacement is already in progress do not need to be accounted for because their replacement was part of a prior year's capital plan</span></li>
+<li class="rvps2"><span class="rvts6">Assets that an agency chooses not to replace (e.g. the fleet size is being reduced).</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">If either scenario applies to an asset, you can use the replacement status asset event mark the asset as either "Replacement: Underway" or "Replacement: None." The event will update all capital planning interfaces to reflect the proper replacement. There are three types of replacement status:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ol style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: decimal;">
+<li value="1" class="rvps2"><span class="rvts11">By Policy</span><span class="rvts6">: TransAM should schedule the asset for replacement according to the policy for that asset subtype. This is the default replacement status and is equivalent to setting the Scheduled Year equal to the Policy Year and assigning the asset to capital project/ALI based on the policy.</span></li>
+<li value="2" class="rvps2"><span class="rvts11">Underway</span><span class="rvts6">: An initial replacement is underway, and expected to arrive in the current fiscal year. No replacement asset should be scheduled, but all shadow projects should are still scheduled with the anticipation that the asset will arrive during the current fiscal year. This status is equivalent to setting the Scheduled Year equal to the Current Year, which removes the asset from its previously assigned capital project/ALI. e.g. If the asset was previously in a FY 17-18 ALI, it will be removed from that SOGR ALI. Shadow projects will be created as if the asset arrived in FY 16-17.</span></li>
+<li value="3" class="rvps2"><span class="rvts11">None</span><span class="rvts6">: The agency will at some point retire the asset and no replacement is expected. Therefore, no Scheduled Year is set, which removes the asset from all capital projects/ALIs.</span></li>
+</ol>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Cambridge Systematics. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

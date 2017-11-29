@@ -1,0 +1,156 @@
+﻿<html>
+	
+<head>
+	<title>Notifications Menu</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "TransAM User Guide.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("NotificationsMenu");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Notifications Menu</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="Overview.html">Overview</a> &rsaquo;&rsaquo; <a href="MainMenu.html">Main Menu</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="MainMenu.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="ReportsMenu.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="searches.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">This menu, represented by the globe icon, provides system generated notices when background jobs are completed or other actions require your attention. You can mark notifications as read or select the notification links to navigate to relevant pages.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">At times, TransAM notifies you that an operation has completed as a background process or that work has been sent to you and requires attention. The Notifications menu ensures you don't miss anything important. A number will appear on the top-right of the globe icon marking how many notifications are available. If you click the icon, a table will display listing the notifications. The following steps can be taken once the notifications table has opened:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li style="margin-left: 0px" class="rvps5"><span class="rvts6">Click a row's check-mark icon to remove that notification from the list. This action will reduce the notification count to match your updated number of notifications.</span></li>
+<li style="margin-left: 0px" class="rvps5"><span class="rvts6">Click the "Mark All as Read" link in the bottom of the table to remove all notifications from the list. The notification counter will disappear from the globe icon since all notifications have been cleared.</span></li>
+<li style="margin-left: 0px" class="rvps5"><span class="rvts6">Click the notifications text to navigate to a page associated with the notification.</span></li>
+<li style="margin-left: 0px" class="rvps5"><span class="rvts6">Click the globe icon or elsewhere on the page to close the table.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The following table explains the key functionality that drives notifications.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<div class="rvps8"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+<tr valign="top">
+<td width="134" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts15">Source</span></p>
+</td>
+<td width="136" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts15">Role</span></p>
+</td>
+<td width="490" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts15">Notification and Links</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="134" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Bulk Update</span></p>
+</td>
+<td width="136" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Agency users </span></p>
+</td>
+<td width="490" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">When performing a bulk upload, TransAM performs the updates in the background. The "New Inventory Complete" notification tells you when the background job is finished and directs you to the upload detail page.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="134" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Asset Transfer</span></p>
+</td>
+<td width="136" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Agency and State users</span></p>
+</td>
+<td width="490" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">When an asset is transferred, the receiving agency gets a notification saying "A new asset has been transferred to you. Please update the asset." The link directs you to the Update Master Record form where the transfer is completed once required information has been updated.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="134" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Early Disposition Requests</span></p>
+</td>
+<td width="136" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Agency and State users</span></p>
+</td>
+<td width="490" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">When an asset is requested for early disposition by a transit agency, State Staff/Managers receive notice of the request. Likewise, the requesting agency will receive a notification disclosing the state’s response. </span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="134" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Apply Policy</span></p>
+</td>
+<td width="136" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Agency and State users</span></p>
+</td>
+<td width="490" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Applying a policy for a given agency updates policy and schedule replacement information on an asset-by-asset basis. The "&lt;###&gt; assets have been updated using &lt;XXXXX&gt; policy" notification tells you when the background job is finished and directs you to the policy page.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="134" height="15" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">SOGR Capital Project Analyzer</span></p>
+</td>
+<td width="136" height="15" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Agency and State users</span></p>
+</td>
+<td width="490" height="15" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Running the SOGR Capital Project Analyzer updates your capital projects and ALIs based on policy information. The "SOGR Capital Project Analyzer completed. &lt;XXXX&gt; SOGR capital projects were added to your capital needs list" notification tells you when the background job is finished and directs you to the capital projects page.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="134" height="15" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Project Planner </span></p>
+</td>
+<td width="136" height="15" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Agency and State Users</span></p>
+</td>
+<td width="490" height="15" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">If you are moving a large quantity of assets in the project planner (ALI or subset of assets), the process will take place in the background to safely make all calculation updates. The "The &lt;XXXX&gt; ALI was successfully moved. Click here to see the updated Project Planner" notification tells you when the background job is finished and clicking the link to refresh the page updates the project planner.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Cambridge Systematics. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

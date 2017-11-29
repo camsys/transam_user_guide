@@ -1,0 +1,103 @@
+﻿<html>
+	
+<head>
+	<title>Replacement Fiscal Year of an Asset</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "TransAM User Guide.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("ReplacementFiscalYearofanAsset");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Replacement Fiscal Year of an Asset</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="policies.html">Policy</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="policies.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="policies.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="Calculators.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">TransAM uses the policy along with mileage to assign the Replacement Fiscal Year of each asset. The starting point for this calculation is the In Service Date of the asset. The default In Service Date for an asset is the current date.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">In all cases, the replacement year is the fiscal year </span><span class="rvts20">after</span><span class="rvts6"> the year in which the asset reaches the end of its useful life (calculated as described above). For example, if the useful life of an asset is 12 years and it was placed in service in January 2010 (FY 09-10), the asset will reach the end of its useful life in January, 2022 (FY 21-22) and must be scheduled for replacement in FY 22-23.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">TransAM tracks two potentially different Replacement FYs for each asset:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<div class="rvps2"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+<tr valign="top">
+<td width="291" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Policy Replacement FY</span></p>
+</td>
+<td width="1008" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">The fiscal year that the asset must be replaced based on the service life calculation type. &nbsp;An asset is determined to be </span><span class="rvts11">in backlog</span><span class="rvts6"> if the policy replacement year is prior to the current reporting year.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="291" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Scheduled Replacement FY</span></p>
+</td>
+<td width="1008" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">The fiscal year in which an asset owner has scheduled the asset to be replaced. Transit agencies have the freedom to schedule replacement of an asset in a different year than the policy or TransAM estimate would dictate, as described in more detail below. Scheduled replacement years will default to the estimated replacement year value unless a user changes the year.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Cambridge Systematics. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

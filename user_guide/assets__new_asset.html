@@ -1,0 +1,100 @@
+﻿<html>
+	
+<head>
+	<title>Adding an Asset</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "TransAM User Guide.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("AddinganAsset");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Adding an Asset</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="assets.html">Assets and Inventory</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="assets.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="asset_groups.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="assets__copy.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">TransAM has three different methods for adding new assets. The simplest approach is to manually enter information about the asset directly into TransAM. If you have several similar assets, another approach is to add one asset manually, and then copy it, and enter only the information that is different. If you are working with a large quantity of assets, you can add multiple assets at once by creating a New Inventory template from the Bulk Updates page and loading the spreadsheet into the application.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Each asset type and subtype has certain information that is required. This typically includes the asset type and subtype, the date of purchase, the date on which the asset was placed into service, the purchase price, and so on. There may be other required fields depending on how your system was configured. </span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Some assets must be itemized; e.g., each facility and each revenue vehicle must be entered as a separate asset. Other types of assets can be entered as a single asset record with a quantity associated with it. The advantage of entering assets individually is that you can track the condition of each one over time (since they are likely to wear differently), replace them individually, and record the physical or geographic location of every asset, which can be helpful in tracking. But it can be much simpler to enter and maintain data on a single "bulk" asset, e.g., 50 desks, or 10 miles of guard rail, than it is to enter and maintain data on every individual unit of your assets.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">To add a new asset to the inventory.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ol style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: decimal;">
+<li value="1" style="margin-left: 0px" class="rvps5"><span class="rvts6">Choose Inventory-&gt;Add Asset to see the New Asset page.</span></li>
+<li value="2" style="margin-left: 0px" class="rvps5"><span class="rvts6">Choose the type of asset you wish to create from the list.</span></li>
+<li value="3" style="margin-left: 0px" class="rvps5"><span class="rvts6">Click Create New Asset to see a form to enter asset data.</span></li>
+<li value="4" style="margin-left: 0px" class="rvps5"><span class="rvts6">Fill in the information about the new asset. Note that items with an asterisk (*) prefix are required.</span></li>
+<li value="5" style="margin-left: 0px" class="rvps5"><span class="rvts6">Save the new asset by clicking the Create Asset button at the bottom of the form.</span></li>
+</ol>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">TransAM will save the asset, and display the asset Detail page. If there were any input errors or required data that were missing, TransAM will highlight the errors and display messages identifying the problem.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Cambridge Systematics. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

@@ -1,0 +1,112 @@
+﻿<html>
+	
+<head>
+	<title>Groups</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<meta name="keywords" content="Group">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "TransAM User Guide.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Groups");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Groups</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="assets.html">Assets and Inventory</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="assets.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="ReplacementStatus.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="assets__new_asset.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">Groups are collections of assets that you create on the fly, or that TransAM creates on your behalf. You can create groups manually, or perform a search or query and then create a group from the assets you've found. You can create any number of groups, and name them any way you like. A few things to note:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts6">Groups are shared across an organization, so if you create a group, any user who is part of your organization can access it.</span></li>
+<li class="rvps2"><span class="rvts6">Groups can contain assets of different types. For example, you could create a group called "Assets Acquired in 2004", which could include buses, signs, HVAC equipment, and much more.</span></li>
+<li class="rvps2"><span class="rvts6">Users from a Parent agency can create groups that contain assets from all the agencies that report to them.</span></li>
+<li class="rvps2"><span class="rvts6">Groups are static and will not change or update automatically with changes to assets.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">To create a group:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ol style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: decimal;">
+<li value="1" class="rvps2"><span class="rvts6">Choose Inventory-&gt;Groups-&gt;Manage Groups to see the Groups page.</span></li>
+<li value="2" class="rvps2"><span class="rvts6">Click Create New Group to see the New Group page.</span></li>
+<li value="3" class="rvps2"><span class="rvts6">Give the group a name, a code that is up to eight characters long, and a description. This code will appear as a "tag" alongside every asset that belongs to the group.</span></li>
+<li value="4" class="rvps2"><span class="rvts6">Click the Create Asset Group button. The group is created and you are taken to the Group Detail Page.</span></li>
+<li value="5" class="rvps2"><span class="rvts6">From the Group Detail Page, use the tabs to see the assets in the group and a summary of asset subtypes. The Actions Menu lets you update or remove the group. When you remove a group, the group tag will disappear from every asset that was previously included in the group.</span></li>
+</ol>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">To add or remove a single asset from a group:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ol style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: decimal;">
+<li value="1" class="rvps2"><span class="rvts6">Navigate to an asset detail from your inventory.</span></li>
+<li value="2" class="rvps2"><span class="rvts6">Click on the Action Menu, hover over 'Add to group' and select the group that you would like to assign the asset to.</span></li>
+<li value="3" class="rvps2"><span class="rvts6">The complementary group tag will appear on the asset summary.</span></li>
+<li value="4" class="rvps2"><span class="rvts6">To remove an asset from a group, locate the group tag on the asset summary, and click the "x". &nbsp;The tag will disappear indicating that this asset is no longer part of that group.</span></li>
+</ol>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">To see the assets in a Group, along with a summary by asset type, choose the group you want from the Inventory-&gt;Groups menu. You can also choose Inventory-&gt;Groups to see a list of all groups. </span></p>
+<p class="rvps2"><span class="rvts6">To create a group based on a search or query, see </span><a class="rvts14" href="saved_searches.html">Search/Query</a><span class="rvts6">.</span></p>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Cambridge Systematics. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

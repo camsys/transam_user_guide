@@ -1,0 +1,123 @@
+﻿<html>
+	
+<head>
+	<title>Asset Type Rules</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "TransAM User Guide.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("AssetTypeRules");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Asset Type Rules</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="policies.html">Policy</a> &rsaquo;&rsaquo; <a href="PolicyOverview.html">Policy Overview</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="PolicyOverview.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="AgencyLevel.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="Subtyperule.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">For each Asset Type, a Policy includes the following:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<div class="rvps2"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+<tr valign="top">
+<td width="303" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Service life calculation type</span></p>
+</td>
+<td width="999" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">The method used to estimate the useful life of each asset. The default option is Age AND Mileage for Revenue Vehicles and Age Only for other asset types. This can only be changed by the State.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="303" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Replacement cost calculation type</span></p>
+</td>
+<td width="999" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">The method used to estimate the costs of replacing an asset. Options include Replacement Cost, Replacement Cost + Interest (default for Revenue Vehicles), and Purchase Price + Interest which is the default for all asset types.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="303" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Condition rollup calculation type</span></p>
+</td>
+<td width="999" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">This field is currently not in use. It will be used in order to calculate rollup condition values for an asset that has multiple components associated with it.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="303" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Annual inflation rate</span></p>
+</td>
+<td width="999" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">The annual interest (inflation) rate used to determine the future cost of an asset. The default value is 1.1%.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="303" height="30" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Percent residual value</span></p>
+</td>
+<td width="999" height="30" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">The residual value for an asset at the end of its useful life, as a percentage of the original cost. This value is used to determine cost recovery when estimating capital needs. This should be set to 0 if assets are fully depreciated at the end of their useful life.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="303" height="30" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Condition rollup weight</span></p>
+</td>
+<td width="999" height="30" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">This field is currently not in use. It will be used in order to assign user-defined weights when calculating rollup condition values for an asset that has multiple components associated with it.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Cambridge Systematics. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

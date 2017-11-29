@@ -1,0 +1,118 @@
+﻿<html>
+	
+<head>
+	<title>Asset Detail Page</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "TransAM User Guide.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("AssetDetailPage");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Asset Detail Page</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="assets.html">Assets and Inventory</a> &rsaquo;&rsaquo; <a href="manufacturers.html">Asset Tables and Detail Pages</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="manufacturers.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="assets__index.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="AssetActionsMenu.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">Asset data is also able to be displayed in a detailed "drill down" view. &nbsp;When asset data are shown in tables, you see a combination of master data along with the most recent updates. To see historical and more detailed data about an asset, you use the Detail view. In the detailed view, asset data is organized on the page in a series of tabs. Complete the following steps to navigate to an asset detail page:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ol style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: decimal;">
+<li value="1" class="rvps2"><span class="rvts6">From the Main Menu, click the Inventory icon.</span></li>
+<li value="2" class="rvps2"><span class="rvts6">Hover over the desired asset type to show the available asset subtypes and click the desired subtype. You will be directed to a table listing all the assets of the selected type/subtype.</span></li>
+<li value="3" class="rvps2"><span class="rvts6">Click a row in the table to navigate to the detail page for the correlating asset.</span></li>
+</ol>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The tabs you see in the detailed view include the following:</span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts11">Configuration</span><span class="rvts6">: This tab contains master data about the configuration of the asset including its size, manufacturer, model/style, and what features or options it includes.</span></li>
+<li class="rvps2"><span class="rvts11">Purchase</span><span class="rvts6">: This tab contains information about how the asset was acquired and how long it is expected to last including the vendor, purchase price, and estimated service life.</span></li>
+<li class="rvps2"><span class="rvts11">History</span><span class="rvts6">: This tab shows a timeline showing the entire life cycle of the asset, from the date it was purchased and placed into service, through every data update, to the projected end of life of the asset. You can navigate the asset timeline in a graphical interface by either scrolling through the timeline (dragging the scroll bar), or zooming in and out of the screen (using the mouse wheel); alternatively, you can view all the events that make up the asset's history in a tabular format.</span></li>
+<li class="rvps2"><span class="rvts11">Occupants</span><span class="rvts6">: Where applicable, this tab lists all child assets, or assets housed at this location.</span></li>
+<li class="rvps2"><span class="rvts11">Tasks</span><span class="rvts6">: If there are any tasks in the system associated with this asset, they will be listed in this tab. &nbsp;You can create a new Task from the bottom of this tab.</span></li>
+<li class="rvps2"><span class="rvts11">Comments</span><span class="rvts6">: Any user can add comments about an asset to remark on its condition, heritage, or anything else that seems appropriate. Comments can be deleted by users with administrative rights.</span></li>
+<li class="rvps2"><span class="rvts11">Documents</span><span class="rvts6">: Asset owners can attach documents of all kinds to their assets to ensure it is fully documented, including such things as purchase orders, repair receipts, grant documents, and inspection reports. To add a document, click the Choose File button, enter a description, and click Add Document. </span></li>
+<li class="rvps2"><span class="rvts11">Photos</span><span class="rvts6">: Asset owners can attach photographs or other images to their assets to record their appearance, condition, or for any other purpose. To add a photo, click the Choose File button, enter a description, and click Add Photo. Uploading may take several seconds or more.</span></li>
+<li class="rvps2"><span class="rvts11">Charts</span><span class="rvts6">: Charts show the condition and mileage of the asset over time.</span></li>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside; list-style-type: circle;">
+<li class="rvps2"><span class="rvts11">Condition History</span><span class="rvts6">: The condition chart plots three different pieces of information:</span></li>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside; list-style-type: square;">
+<li class="rvps2"><span class="rvts6">The blue "Rating" points display condition values reported by users. The system additionally plots a blue best-fit-line (linear interpolation) of those data points. This shows the current state of the asset's condition.</span></li>
+<li class="rvps2"><span class="rvts6">The red-dashed line labeled "Condition Threshold" shows the condition threshold as designated in the agencies policy. This line allows the user to easily visualize whether the asset has a condition rating that has surpassed the condition threshold.</span></li>
+<li class="rvps2"><span class="rvts6">The green TERM curve is an interpolated curve generated for different asset types based on FTA experimental data points. This curve allows the user to easily visualize how the asset performs with respect to FTA's data.</span></li>
+</ul>
+<li class="rvps2"><span class="rvts11">Mileage History</span><span class="rvts6">: The red data points display mileage values as reported by users. The system additionally plots a red best-fit-line (linear interpolation) of those data points.</span></li>
+</ul>
+<li class="rvps2"><span class="rvts11">FTA Reporting</span><span class="rvts6">: This tab contains information about how the asset is characterized and utilized according to FTA reporting standards.</span></li>
+<li class="rvps2"><span class="rvts11">Depreciation</span><span class="rvts6">: TransAM uses the purchase price and information about your accounting policies to maintain a record of the asset's depreciation and current value.</span></li>
+<li class="rvps2"><span class="rvts11">Capital Projects</span><span class="rvts6">: This tab will show any capital projects that relate to this asset. These typically include projects that rehab or replace the asset, as well as projects in future years that represent later replacements in the cycle. For example, if this asset must be replaced every five years, you may see a capital project scheduled every five years.</span></li>
+</ul>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li style="margin-left: 0px" class="rvps5"><span class="rvts11">Audit Results</span><span class="rvts6">: This tab contains a table listing the current and historical Audits associated with the asset. Audits include a name, the audit result (Passed/Failed), and the work still required in order to pass the audit.</span></li>
+<li style="margin-left: 0px" class="rvps5"><span class="rvts11">Map</span><span class="rvts6">: If the asset is associated with a location, a map tab is available to view the location of the asset.</span></li>
+</ul>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Cambridge Systematics. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

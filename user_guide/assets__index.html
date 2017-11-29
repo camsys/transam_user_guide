@@ -1,0 +1,103 @@
+﻿<html>
+	
+<head>
+	<title>Asset Table Page</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "TransAM User Guide.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("AssetTablePage");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Asset Table Page</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="assets.html">Assets and Inventory</a> &rsaquo;&rsaquo; <a href="manufacturers.html">Asset Tables and Detail Pages</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="manufacturers.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="manufacturers.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="assets__show.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">Asset data can be displayed in data tables with one row per asset, and one data item per column. When asset data are shown in tables, you see a combination of master data along with the most recent updates - e.g. the latest recorded mileage, condition, or the most recent location in which the asset is housed. Complete the following steps to navigate to a table of assets:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ol style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: decimal;">
+<li value="1" class="rvps2"><span class="rvts6">From the Main Menu, click the Inventory icon.</span></li>
+<li value="2" class="rvps2"><span class="rvts6">Hover over the desired asset type to show the available asset subtypes and click the desired subtype. You will be directed to a table listing all the assets of the selected type/subtype.</span></li>
+<li value="3" class="rvps2"><span class="rvts6">Alternatively, from the Inventory icon, you can hover over the Manufacturers drop-down and click on a desired manufacturer. You will be directed to a table listing all the assets of the selected manufacturer.</span></li>
+</ol>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Note</span><span class="rvts6">: You can generate different table views throughout TransAM. All table views have the same general layout - one row per item, and one data item per column - and you can perform the same actions in each table.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Once in a table view, there are several controls allowing you to manipulate and export the table:</span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts6">Click column headers to sort the table based on a given attribute (ascending: up arrow or descending: down arrow)</span></li>
+<li class="rvps2"><span class="rvts6">At the bottom left of the table, select how many rows you want to display in your table per page. Options for rows per page range from 5 to 200. This setting will "stick" if you subsequently navigate to additional asset tables.</span></li>
+<li class="rvps2"><span class="rvts6">In the bottom right of the table, you can navigate between previous and next pages in your table or jump to a specific page.</span></li>
+<li class="rvps2"><span class="rvts6">In the upper right corner of the table are three buttons. From left to right:</span></li>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside; list-style-type: circle;">
+<li class="rvps2"><span class="rvts11">Hide/Show Pagination</span><span class="rvts6">: Clicking this button will hide your pagination and display all assets in your selection. This feature becomes useful if you want to export more than 200 records. </span><span class="rvts19">Note: </span><span class="rvts6">It will take a minute for the system to load the table depending on the size of your view.</span></li>
+<li class="rvps2"><span class="rvts11">Columns</span><span class="rvts6">: Scroll through and toggle certain data attributes on or off in the table view.</span></li>
+<li class="rvps2"><span class="rvts11">Export</span><span class="rvts6">: You can export your current table view into either a CSV, TXT, or Excel XLS file. Since TransAM exports your current view, you must set the columns and number of records you want to display before exporting.</span></li>
+</ul></ul>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Cambridge Systematics. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

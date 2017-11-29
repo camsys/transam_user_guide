@@ -1,0 +1,741 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+	<title>TransAM Asset Management- Table of Contents</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/silver-theme/jquery-ui-1.8.12.custom.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/dynatree/chm/ui.dynatree.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="css/toc.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#tabs .ui-widget-header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.17.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/jquery.dynatree.min.js"></script>
+	<script type="text/javascript" src="js/hndjsse.js"></script>
+	<script type="text/javascript">
+	
+		window.bSearchDataLoaded = false;
+		var sHelpIdToActivate = '';
+	
+		$(document).ready(function()
+		{
+			var sAnchorName = '';
+			try { sAnchorName = top.location.href.substring(top.location.href.lastIndexOf("#") + 1, top.location.href.length); }
+			catch(err) { sAnchorName = ''; }
+			var nSelectedTab = 0;
+			if (sAnchorName == '_index') nSelectedTab = 1
+			else if (sAnchorName == '_search') nSelectedTab = 2;			
+			$("#tabs").tabs({
+				selected: nSelectedTab,
+				select: function(event, ui) { HideKwPopup(); }
+			});
+			
+			// Toc
+			if ($("#tab-toc").length) {
+				$("#tab-toc").dynatree({
+					clickFolderMode: 1,
+					debugLevel: 0,
+					imagePath: 'css/dynatree/chm/',
+					onActivate: function(node){
+						if ($("#tab-keywords").length && $("#tab-keywords").dynatree && $("#tab-keywords").dynatree("getTree") && $("#tab-keywords").dynatree("getTree").activateKey)
+							$("#tab-keywords").dynatree("getTree").activateKey(null);
+						if(node.data.href && node.data.href != '#'){
+							window.open(node.data.href, node.data.target);
+						}
+					}
+				});
+				// Expand all nodes if required
+				// Select the active help id
+				if (sHelpIdToActivate != '') $("#tab-toc").dynatree("getTree").activateKey(sHelpIdToActivate);
+			}
+			
+			// Keywords
+			
+			if ($("#tab-keywords").length) {
+				$("#tab-keywords").dynatree({
+					clickFolderMode: 1,
+					debugLevel: 0,
+					imagePath: 'css/dynatree/chm/',
+					onClick: function(node, event){
+						HideKwPopup();
+						if (node.data && node.data.click)
+						{
+							var aRefList = null;
+							eval('aRefList=' + node.data.click);
+							if (ShowKwPopup(node.li, aRefList))
+							{
+								if ($("#tab-toc") && $("#tab-toc").dynatree && $("#tab-toc").dynatree("getTree") && $("#tab-toc").dynatree("getTree").activateKey)
+									$("#tab-toc").dynatree("getTree").activateKey(null);
+								if(node.data.href && node.data.href != '#'){
+									window.open(node.data.href, node.data.target);
+								}
+							}
+						}
+					}
+				});
+				// Expand all nodes if required
+				}
+			
+			// Load search data
+			(function() {
+				var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
+				se.src = 'js/hndsd.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
+			})();
+		});
+		
+		$('body').click(function() {
+			HideKwPopup();
+		});
+		
+		function SelectTocItem(sHelpId)
+		{
+			if ($("#tab-toc").length && $("#tab-toc").dynatree && $("#tab-toc").dynatree("getTree") && $("#tab-toc").dynatree("getTree").getNodeByKey) {
+				$("#tab-toc").dynatree("getTree").getNodeByKey(sHelpId).activateSilently();
+			}
+			else {
+				sHelpIdToActivate = sHelpId;
+			}
+		}
+		
+		function HideKwPopup()
+		{
+			if($("#popupMenu")) $("#popupMenu").remove();
+		}
+		
+		function ShowKwPopup(oSender, aLinks)
+		{
+			HideKwPopup();
+			if (!aLinks || !aLinks.length || aLinks.length == 0) return false
+			else if (aLinks.length == 1) return true
+			else
+			{
+				var oParentDiv = document.createElement("DIV");
+				oParentDiv.id = "popupMenu";
+				var oLink = null;
+				// Close button
+				oLink = document.createElement("SPAN");
+				oLink.className = "close-button";
+				oLink.innerHTML = "X";
+				oLink.href = "#";
+				oLink.onclick = HideKwPopup;
+				oParentDiv.appendChild(oLink);
+				// Items
+				for (var nCnt=0; nCnt<aLinks.length; nCnt++)
+				{
+					oLink = document.createElement("A");
+					oLink.innerHTML = aLinks[nCnt][0];
+					oLink.href = aLinks[nCnt][1];
+					oLink.target = "FrameMain";
+					oLink.onclick = HideKwPopup;
+					oParentDiv.appendChild(oLink);
+				}
+				document.body.appendChild(oParentDiv);
+				var pos = $(oSender).offset(); 
+				var height = $(oSender).height();
+				$(oParentDiv).css({
+					"left": (pos.left+20) + "px",
+					"top": (pos.top + height + 5) + "px"
+				});
+				$(oParentDiv).show();
+				return false;
+			}
+		}
+		
+		function PerformSearch()
+		{
+			if (!window.bSearchDataLoaded) {
+				$("#search_results").html("Search engine data hasn't been fully loaded yet or an error occurred while loading it. This usually happens when documentation is browsed locally.");
+				return;
+			}
+			sValue = $("#search_value").val();
+			$("#search_results").html('Searching...');
+			var oSearchEngine = new HndJsSe;
+			oSearchEngine.ParseInput(sValue);			
+			oSearchEngine.PerformSearch();
+			if (!oSearchEngine.aResults || !oSearchEngine.aResults.length)
+			{
+				$("#search_results").html('No results found.');
+			}
+			else
+			{
+				$("#search_results").html('<div id="search_results_content"></div>');
+				var oUl = $("#search_results_content").append("<ul id='lr'></ul>").find("ul");
+				for (var nCnt = 0; nCnt < oSearchEngine.aResults.length; nCnt++)
+				{
+					if (oSearchEngine.aResults[nCnt][0] < aTl.length)
+					{
+						oUl.append("<li><a href='" + aTl[oSearchEngine.aResults[nCnt][0]][0] + "?search=" + escape(sValue) + "' target='FrameMain'>" + unescape(aTl[oSearchEngine.aResults[nCnt][0]][1]) + "</a></li>");
+					}
+				}
+				// Tree
+				$("#search_results_content").dynatree({
+					clickFolderMode: 1,
+					debugLevel: 0,
+					imagePath: 'css/dynatree/chm/',
+					onActivate: function(node){
+						if ($("#search_results_content") && $("#search_results_content").dynatree && $("#search_results_content").dynatree("getTree") && $("#search_results_content").dynatree("getTree").activateKey)
+							$("#search_results_content").dynatree("getTree").activateKey(null);
+						if(node.data.href && node.data.href != '#'){
+							window.open(node.data.href, node.data.target);
+						}
+					}
+				});
+			}
+		}
+	</script>
+</head>
+
+<body>
+
+	<div id="tabs">
+		<ul>
+			<li><a href="#tab-toc">Contents</a></li>
+			</ul>
+		<div id="tab-toc">
+			<ul id="toc" class="">
+
+				<li class="" id="CapitalPlanningToolIntroduction" data="icon: '0.png'">
+							<a
+							href="CapitalPlanningToolIntroduction.html"
+							target="FrameMain">
+								Capital Planning Tool Introduction</a>
+
+				</li><li class="folder" id="GettingStarted" data="">
+							<a
+							href="GettingStarted.html"
+							target="FrameMain">
+								Getting Started</a>
+
+				<ul><li class="" id="SigningIn" data="icon: '8.png'">
+							<a
+							href="SigningIn.html"
+							target="FrameMain">
+								Signing In</a>
+
+				</li><li class="" id="OrganizationsandOrganizationType" data="">
+							<a
+							href="organizations.html"
+							target="FrameMain">
+								Organizations and Organization Types</a>
+
+				</li><li class="" id="UsersandUserTypes" data="">
+							<a
+							href="users.html"
+							target="FrameMain">
+								Users and User Types</a>
+
+				</li></ul></li><li class="folder" id="Overview" data="">
+							<a
+							href="Overview.html"
+							target="FrameMain">
+								Overview</a>
+
+				<ul><li class="folder" id="MainMenu" data="">
+							<a
+							href="MainMenu.html"
+							target="FrameMain">
+								Main Menu</a>
+
+				<ul><li class="" id="TitleHome" data="">
+							<a
+							href="TitleHome.html"
+							target="FrameMain">
+								Title &amp; Home</a>
+
+				</li><li class="" id="InventoryMenu" data="">
+							<a
+							href="InventoryMenu.html"
+							target="FrameMain">
+								Inventory Menu</a>
+
+				</li><li class="" id="PoliciesMenu" data="">
+							<a
+							href="PoliciesMenu.html"
+							target="FrameMain">
+								Policies Menu</a>
+
+				</li><li class="" id="FundingMenu" data="">
+							<a
+							href="FundingMenu.html"
+							target="FrameMain">
+								Funding Menu</a>
+
+				</li><li class="" id="ReportsMenu" data="">
+							<a
+							href="ReportsMenu.html"
+							target="FrameMain">
+								Reports Menu</a>
+
+				</li><li class="" id="NotificationsMenu" data="">
+							<a
+							href="NotificationsMenu.html"
+							target="FrameMain">
+								Notifications Menu</a>
+
+				</li><li class="" id="SearchMenu" data="">
+							<a
+							href="searches.html"
+							target="FrameMain">
+								Search Menu</a>
+
+				</li><li class="" id="ALIFilterMenu" data="">
+							<a
+							href="user_activity_line_item_filters.html"
+							target="FrameMain">
+								ALI Filter Menu</a>
+
+				</li><li class="" id="OrganizationFilterMenu" data="">
+							<a
+							href="user_organization_filters.html"
+							target="FrameMain">
+								Organization Filter Menu</a>
+
+				</li><li class="" id="UserMenu" data="">
+							<a
+							href="UserMenu.html"
+							target="FrameMain">
+								User Menu</a>
+
+				</li></ul></li><li class="" id="Dashboard" data="">
+							<a
+							href="dashboards.html"
+							target="FrameMain">
+								Dashboard</a>
+
+				</li><li class="" id="Messaging" data="">
+							<a
+							href="messages.html"
+							target="FrameMain">
+								Messaging</a>
+
+				</li><li class="" id="TasksandAssignments" data="">
+							<a
+							href="tasks.html"
+							target="FrameMain">
+								Tasks and Assignments</a>
+
+				</li><li class="" id="UserSettings" data="">
+							<a
+							href="UserSettings.html"
+							target="FrameMain">
+								User Settings</a>
+
+				</li><li class="" id="ContentArea" data="icon: '8.png'">
+							<a
+							href="ContentArea.html"
+							target="FrameMain">
+								Content Area</a>
+
+				</li></ul></li><li class="folder" id="AssetsandInventory" data="">
+							<a
+							href="assets.html"
+							target="FrameMain">
+								Assets and Inventory</a>
+
+				<ul><li class="" id="AssetTypesandSubtypes" data="">
+							<a
+							href="AssetTypesandSubtypes.html"
+							target="FrameMain">
+								Asset Types and Subtypes</a>
+
+				</li><li class="folder" id="AssetTablesandDetailPages" data="icon: '0.png'">
+							<a
+							href="manufacturers.html"
+							target="FrameMain">
+								Asset Tables and Detail Pages</a>
+
+				<ul><li class="" id="AssetTablePage" data="">
+							<a
+							href="assets__index.html"
+							target="FrameMain">
+								Asset Table Page</a>
+
+				</li><li class="" id="AssetDetailPage" data="">
+							<a
+							href="assets__show.html"
+							target="FrameMain">
+								Asset Detail Page</a>
+
+				</li></ul></li><li class="folder" id="AssetActionsMenu" data="">
+							<a
+							href="AssetActionsMenu.html"
+							target="FrameMain">
+								Asset Actions Menu</a>
+
+				<ul><li class="" id="AssetAttributesMasterDataandUpda" data="">
+							<a
+							href="AssetAttributesMasterDataandUpda.html"
+							target="FrameMain">
+								Asset Attributes - Master Data and Updates</a>
+
+				</li><li class="" id="ParentandChildAssets" data="">
+							<a
+							href="ParentandChildAssets.html"
+							target="FrameMain">
+								Parent and Child Assets</a>
+
+				</li><li class="" id="RecordDisposition" data="">
+							<a
+							href="RecordDisposition.html"
+							target="FrameMain">
+								Record Disposition</a>
+
+				</li><li class="" id="ReplacementStatus" data="">
+							<a
+							href="ReplacementStatus.html"
+							target="FrameMain">
+								Replacement Status</a>
+
+				</li></ul></li><li class="" id="Groups" data="">
+							<a
+							href="asset_groups.html"
+							target="FrameMain">
+								Groups</a>
+
+				</li><li class="" id="AddinganAsset" data="">
+							<a
+							href="assets__new_asset.html"
+							target="FrameMain">
+								Adding an Asset</a>
+
+				</li><li class="" id="CopyinganAsset" data="">
+							<a
+							href="assets__copy.html"
+							target="FrameMain">
+								Copying an Asset</a>
+
+				</li><li class="folder" id="BulkActions" data="icon: '0.png'">
+							<a
+							href="uploads.html"
+							target="FrameMain">
+								Bulk Actions</a>
+
+				<ul><li class="" id="BulkNewInventory" data="">
+							<a
+							href="BulkNewInventory.html"
+							target="FrameMain">
+								Bulk New Inventory</a>
+
+				</li><li class="" id="BulkInventoryUpdates" data="">
+							<a
+							href="BulkInventoryUpdates.html"
+							target="FrameMain">
+								Bulk Inventory Updates</a>
+
+				</li><li class="" id="BulkProcessResults" data="">
+							<a
+							href="BulkProcessResults.html"
+							target="FrameMain">
+								Bulk Process Results</a>
+
+				</li></ul></li><li class="" id="SearchQuery" data="">
+							<a
+							href="saved_searches.html"
+							target="FrameMain">
+								Search/Query</a>
+
+				</li><li class="" id="AuditResults" data="">
+							<a
+							href="audit_results.html"
+							target="FrameMain">
+								Audit Results</a>
+
+				</li></ul></li><li class="folder" id="Policy" data="icon: '0.png'">
+							<a
+							href="policies.html"
+							target="FrameMain">
+								Policy</a>
+
+				<ul><li class="" id="ReplacementFiscalYearofanAsset" data="">
+							<a
+							href="ReplacementFiscalYearofanAsset.html"
+							target="FrameMain">
+								Replacement Fiscal Year of an Asset</a>
+
+				</li><li class="folder" id="Calculators" data="">
+							<a
+							href="Calculators.html"
+							target="FrameMain">
+								Calculators</a>
+
+				<ul><li class="" id="ReplacementCostCalculation" data="">
+							<a
+							href="ReplacementCostCalculation.html"
+							target="FrameMain">
+								Replacement Cost Calculation</a>
+
+				</li><li class="" id="ConditionEstimation" data="">
+							<a
+							href="ConditionEstimation.html"
+							target="FrameMain">
+								Condition Estimation</a>
+
+				</li><li class="" id="ServiceLifeCalculationMethod" data="">
+							<a
+							href="ServiceLifeCalculationMethod.html"
+							target="FrameMain">
+								Service Life Calculation Method</a>
+
+				</li></ul></li><li class="folder" id="PolicyOverview" data="">
+							<a
+							href="PolicyOverview.html"
+							target="FrameMain">
+								Policy Overview</a>
+
+				<ul><li class="" id="AgencyLevel" data="">
+							<a
+							href="AgencyLevel.html"
+							target="FrameMain">
+								Agency Level</a>
+
+				</li><li class="" id="AssetTypeRules" data="">
+							<a
+							href="AssetTypeRules.html"
+							target="FrameMain">
+								Asset Type Rules</a>
+
+				</li><li class="" id="Subtyperule" data="">
+							<a
+							href="Subtyperule.html"
+							target="FrameMain">
+								Subtype rule</a>
+
+				</li></ul></li><li class="folder" id="PolicyActions" data="">
+							<a
+							href="PolicyActions.html"
+							target="FrameMain">
+								Policy Actions</a>
+
+				<ul><li class="" id="CopyingaPolicy" data="">
+							<a
+							href="CopyingaPolicy.html"
+							target="FrameMain">
+								Copying a Policy</a>
+
+				</li><li class="" id="ApplyingaPolicy" data="">
+							<a
+							href="policies__runner.html"
+							target="FrameMain">
+								Applying a Policy</a>
+
+				</li><li class="" id="ModifyingaPolicyorRule" data="">
+							<a
+							href="ModifyingaPolicyorRule.html"
+							target="FrameMain">
+								Modifying a Policy or Rule</a>
+
+				</li></ul></li></ul></li><li class="folder" id="CapitalPlanning" data="">
+							<a
+							href="capital_projects.html"
+							target="FrameMain">
+								Capital Planning</a>
+
+				<ul><li class="" id="CapitalProjectOverview" data="">
+							<a
+							href="CapitalProjectOverview.html"
+							target="FrameMain">
+								Capital Project Overview</a>
+
+				</li><li class="" id="ActivityLineItemALI" data="">
+							<a
+							href="capital_projects__activity_line_items.html"
+							target="FrameMain">
+								Activity Line Item (ALI)</a>
+
+				</li><li class="" id="CapitalProjectandALIAttributes" data="">
+							<a
+							href="CapitalProjectandALIAttributes.html"
+							target="FrameMain">
+								Capital Project and ALI Attributes</a>
+
+				</li><li class="" id="SOGRCapitalProjectAnalyzer" data="">
+							<a
+							href="capital_projects__builder.html"
+							target="FrameMain">
+								SOGR Capital Project Analyzer</a>
+
+				</li><li class="" id="NewCapitalProject" data="">
+							<a
+							href="capital_projects__new.html"
+							target="FrameMain">
+								New Capital Project</a>
+
+				</li><li class="" id="CapitalNeedsList" data="">
+							<a
+							href="CapitalNeedsList.html"
+							target="FrameMain">
+								Capital Needs List</a>
+
+				</li><li class="" id="EditingaProjectandALI" data="">
+							<a
+							href="EditingaProjectandALI.html"
+							target="FrameMain">
+								Editing a Project and ALI</a>
+
+				</li><li class="" id="PinALIs" data="">
+							<a
+							href="PinALIs.html"
+							target="FrameMain">
+								Pin ALIs</a>
+
+				</li><li class="folder" id="ProjectPlanner" data="">
+							<a
+							href="planning.html"
+							target="FrameMain">
+								Project Planner</a>
+
+				<ul><li class="" id="ProjectPlanningOverview" data="">
+							<a
+							href="ProjectPlanningOverview.html"
+							target="FrameMain">
+								Project Planning Overview</a>
+
+				</li><li class="" id="DragandDropALIs" data="">
+							<a
+							href="DragandDropALIs.html"
+							target="FrameMain">
+								Drag and Drop ALIs</a>
+
+				</li><li class="" id="MoveAssets" data="">
+							<a
+							href="MoveAssets.html"
+							target="FrameMain">
+								Move Assets</a>
+
+				</li><li class="" id="UpdatingALICosts" data="">
+							<a
+							href="UpdatingALICosts.html"
+							target="FrameMain">
+								Updating ALI Costs</a>
+
+				</li></ul></li></ul></li><li class="folder" id="Funding" data="icon: '0.png'">
+							<a
+							href="Funding.html"
+							target="FrameMain">
+								Funding</a>
+
+				<ul><li class="" id="Programs1" data="">
+							<a
+							href="funding_sources.html"
+							target="FrameMain">
+								Programs</a>
+
+				</li></ul></li><li class="folder" id="Reporting" data="">
+							<a
+							href="reports.html"
+							target="FrameMain">
+								Reporting</a>
+
+				<ul><li class="folder" id="CannedReports" data="">
+							<a
+							href="CannedReports.html"
+							target="FrameMain">
+								Canned Reports</a>
+
+				<ul><li class="folder" id="InventoryReports" data="">
+							<a
+							href="InventoryReports.html"
+							target="FrameMain">
+								Inventory Reports</a>
+
+				<ul><li class="" id="AssetAgeReport" data="">
+							<a
+							href="AssetAgeReport.html"
+							target="FrameMain">
+								Asset Age Report</a>
+
+				</li><li class="" id="AssetFundingReport" data="">
+							<a
+							href="AssetFundingReport.html"
+							target="FrameMain">
+								Asset Funding Report</a>
+
+				</li></ul></li><li class="folder" id="CapitalNeedsReports" data="">
+							<a
+							href="CapitalNeedsReports.html"
+							target="FrameMain">
+								Capital Needs Reports</a>
+
+				<ul><li class="" id="UnconstrainedCapitalProjectsRepo" data="">
+							<a
+							href="UnconstrainedCapitalProjectsRepo.html"
+							target="FrameMain">
+								Unconstrained Capital Projects Report</a>
+
+				</li></ul></li><li class="folder" id="PlanningReports" data="">
+							<a
+							href="PlanningReports.html"
+							target="FrameMain">
+								Planning Reports</a>
+
+				<ul><li class="" id="VehicleReplacementReport" data="">
+							<a
+							href="VehicleReplacementReport.html"
+							target="FrameMain">
+								Vehicle Replacement Report</a>
+
+				</li><li class="" id="StateofGoodRepairReport" data="">
+							<a
+							href="StateofGoodRepairReport.html"
+							target="FrameMain">
+								State of Good Repair Report</a>
+
+				</li><li class="" id="DispositionReport" data="">
+							<a
+							href="DispositionReport.html"
+							target="FrameMain">
+								Disposition Report</a>
+
+				</li></ul></li></ul></li><li class="" id="NTDReporting" data="">
+							<a
+							href="NTDReporting.html"
+							target="FrameMain">
+								NTD Reporting</a>
+
+				</li></ul></li><li class="folder" id="AdminFunctionality" data="">
+							<a
+							href="AdminFunctionality.html"
+							target="FrameMain">
+								Admin Functionality</a>
+
+				<ul><li class="" id="AuditManagement" data="">
+							<a
+							href="audits.html"
+							target="FrameMain">
+								Audit Management</a>
+
+				</li><li class="" id="dotGrantsImportExport" data="">
+							<a
+							href="dotgrants_migrations.html"
+							target="FrameMain">
+								dotGrants Import/Export</a>
+
+				</li></ul></li><li class="" id="Glossary" data="">
+							<a
+							href="Glossary.html"
+							target="FrameMain">
+								Glossary</a>
+
+				</li></ul>
+		</div>
+		
+		</div>
+    
+</body>
+
+</html>
+

@@ -1,0 +1,137 @@
+﻿<html>
+	
+<head>
+	<title>Service Life Calculation Method</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "TransAM User Guide.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("ServiceLifeCalculationMethod");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Service Life Calculation Method</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="policies.html">Policy</a> &rsaquo;&rsaquo; <a href="Calculators.html">Calculators</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="Calculators.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="ConditionEstimation.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="PolicyOverview.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">When an asset is first added to TransAM, it is expected to be in service for the length of time (or mileage) for that asset type and subtype as specified in the policy rules. For example, policy defines a new 40-foot heavy duty bus as having an expected useful life of 12 years or 500,000 miles. Depending on the policies method for calculating service life, the policy replacement year might differ. If the calculation method is Age Only, then TransAM estimates the bus will be replaced in 12 years. However, if the calculation method is Age OR Mileage, mileage updates may reduce the useful life.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The policy can specify one of six methods for calculating the useful life of an asset:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<div class="rvps2"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
+<tr valign="top">
+<td width="200" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Age only</span></p>
+</td>
+<td width="1030" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">TransAM calculates the policy replacement year based on the estimated service life, as specified in months, for that asset subtype in the policy</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="200" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Condition Only</span></p>
+</td>
+<td width="1030" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">TransAM calculates the policy replacement year based on the number of months TransAM estimates it will take until the assets condition drops below the Minimum Condition Threshold.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="200" height="33" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Age OR Mileage</span></p>
+</td>
+<td width="1030" height="33" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">If the mileage is equal to or greater than the policies service mileage, TransAM calculates the policy replacement year based on the lower (minimum) value of the useful life based on age and mileage. Mileage updates may </span><span class="rvts20">reduce</span><span class="rvts6"> the useful life, but will never extend it.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="200" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Age AND Mileage</span></p>
+</td>
+<td width="1030" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">TransAM calculates the policy replacement year based on when both the age and mileage surpass their estimated minimum values. However, only age is used to make predictions for policy replacement year. Therefore, the policy replacement year is initially set, but if the mileage has not surpassed its service life (Mi.) for the current planning year, then the policy year is deferred to the subsequent planning year. </span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="200" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Age AND Condition</span></p>
+</td>
+<td width="1030" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">TransAM calculates the policy replacement year based on when both the age and condition surpass their policy minimum values. </span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="200" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Age OR Condition</span></p>
+</td>
+<td width="1030" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">TransAM calculates the policy replacement year based on whichever comes first; the estimated time for the condition dropping below the minimum condition threshold or the estimated service life as specified in the policy.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="200" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Condition AND Mileage</span></p>
+</td>
+<td width="1030" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">TransAM calculates the policy replacement year based on when both the condition and mileage surpass their policy minimum values. </span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="200" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Condition OR Mileage</span></p>
+</td>
+<td width="1030" valign="top" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">If the mileage is equal to or greater than the policies service mileage, TransAM calculates the policy replacement year based on the lower (minimum) value of the useful life based on the estimated time for the condition dropping below the policy minimum condition and mileage. Mileage updates may </span><span class="rvts20">reduce</span><span class="rvts6"> the useful life, but will never extend it. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Cambridge Systematics. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

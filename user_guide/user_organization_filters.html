@@ -1,0 +1,93 @@
+﻿<html>
+	
+<head>
+	<title>Organization Filter Menu</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "TransAM User Guide.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("OrganizationFilterMenu");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Organization Filter Menu</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="Overview.html">Overview</a> &rsaquo;&rsaquo; <a href="MainMenu.html">Main Menu</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="MainMenu.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="user_activity_line_item_filters.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="UserMenu.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">Users in a parent or consolidated organization can view and report on the assets of all the organizations for which they have responsibility. Therefore, it is useful for applicable users to set-up filters of the system where they can view and navigate TransAM as a single agency, all accessible agencies, or a sub-selection of agencies. These different views are defined and managed from the Organization Filter drop-down found in the Main Menu Banner.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The Organizations Filter menu displays the user's selected filters and allows them to create, manage, and select new filters based on their accessible organizations. The menu can be broken down between the available filters on the left and the selected filter on the right:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside; list-style-type: disc;">
+<li style="margin-left: 0px" class="rvps10"><span class="rvts16">The left half of the menu displays a list filters divided by type - system-generated, user-created, and shared - in addition to functionality to add new and manage existing filters. If you are a state user, you will have the following pre-defined filters: All Organizations, All Transit Agencies, Rural, Shared Ride, and Urban. If you are an agency user with access to multiple organizations, you will have a system-generated filter defined as all your accessible organizations, displayed as </span><span class="rvts17">&lt;User’s&gt; organizations</span><span class="rvts16">. If you have multiple available filters, you can switch between the views by clicking on the different filters.</span></li>
+<li style="margin-left: 0px" class="rvps10"><span class="rvts16">The right half of the Organization Filter menu displays the list of organizations for the currently selected filter. Checkboxes are available to select or deselect organizations and the Update Selection button will refresh the view to reflect your changes. If you are viewing a sub-selection of agencies, a red fraction will display next to the filter-name showing how many agencies you are currently viewing (e.g. 4/7).</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">When you select a filter, you are navigating the system with visibility of only the selected filter organizations. Changing filters or sub-selections of agencies allows you to work with the view that is most helpful for a given task. Some pages in TransAM should not be viewed with a filter because the data does not make sense in the context of an organization hierarchy. Based on the page you navigate to or the action you select, the system will either notify you that the system is resetting your filter to perform the action, or indicate that the action you selected is outside your filter and request that you edit the filter as needed. </span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Cambridge Systematics. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

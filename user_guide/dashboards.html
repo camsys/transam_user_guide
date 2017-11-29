@@ -1,0 +1,92 @@
+﻿<html>
+	
+<head>
+	<title>Dashboard</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "TransAM User Guide.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Dashboard");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Dashboard</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="Overview.html">Overview</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="Overview.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="UserMenu.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="messages.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">The Dashboard consists of a series of widgets that provide summary information relevant to the user. Available widgets include:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts11">My Messages</span><span class="rvts6">: A widget summarizing your message in-box. Includes tabs for New, Flagged, Read, and Sent messages.</span></li>
+<li class="rvps2"><span class="rvts11">My Tasks</span><span class="rvts6">: A widget summarizing your tasks. Includes tabs for New and Due Today tasks.</span></li>
+<li class="rvps2"><span class="rvts11">My Notices</span><span class="rvts6">: A widget that displays notices configured by administrator users. The notice is displayed to all users in the system and often relates to system maintenances.</span></li>
+<li class="rvps2"><span class="rvts11">Asset Summary</span><span class="rvts6">: A widget that displays a summary of a user's asset inventory. The system breaks down the inventory by organization and asset type - displaying average age, counts, cost, and book value. To drill down further, you can filter by asset type to display the same information grouped at the asset sub-type level. Use the Organization filter to reduce the dashboard for a specific set of agencies.</span></li>
+<li class="rvps2"><span class="rvts11">Capital Projects</span><span class="rvts6">: A widget that displays a summer of a user's relevant capital projects. The system breaks down the capital project list by agency, number of projects, and estimated cost. To drill down further, you can filter on Fiscal Year.</span></li>
+<li class="rvps2"><span class="rvts11">Audit Summary</span><span class="rvts6">: A widget that displays a summary of the Annual Inventory Update audit results.</span></li>
+</ul>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Cambridge Systematics. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

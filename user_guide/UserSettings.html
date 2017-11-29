@@ -1,0 +1,97 @@
+﻿<html>
+	
+<head>
+	<title>User Settings</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Professional Edition 4.8.0.849">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "TransAM User Guide.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("UserSettings");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">User Settings</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="Overview.html">Overview</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="Overview.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="tasks.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="ContentArea.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">On the right side of the banner is a user icon, which provides access to the TransAM User menu. This menu contains different options depending on your user configuration. To manage your individual settings, click this menu and select the option which lists your name. The system will redirect you to your profile page.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Every user can view and update their individual settings from their profile page. Select the Actions Menu to choose from several options:</span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li style="margin-left: 0px" class="rvps5"><span class="rvts11">Assign myself a task:</span><span class="rvts6"> Takes you to the Task page where you can create and assign tasks.</span></li>
+<li style="margin-left: 0px" class="rvps5"><span class="rvts11">Update my profile picture: </span><span class="rvts6">Select a profile picture by choosing an image from your local machine and adding the photo to your profile.</span></li>
+<li style="margin-left: 0px" class="rvps5"><span class="rvts11">Update my settings: </span><span class="rvts6">Update system settings by selecting the default number of rows you would like to display in the table views and whether you would like to receive messages in your email inbox.</span></li>
+<li style="margin-left: 0px" class="rvps5"><span class="rvts11">Update my profile: </span><span class="rvts6">Edit your personal profile to account for changes in address, title, phone number, email, etc.</span></li>
+<li style="margin-left: 0px" class="rvps5"><span class="rvts11">Change my password: </span><span class="rvts6">Change your password.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Users with management or administrative privileges have the ability perform the before mentioned actions for other users (ability to change settings and/or reset passwords for other users, etc.) as well as the ability to </span><span class="rvts11">deactivate </span><span class="rvts6">users within their agency.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Cambridge Systematics. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+
